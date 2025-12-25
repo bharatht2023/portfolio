@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            position: relative;
+        }
+
+        section {
+            background: linear-gradient(to right, black, #f23);
+            overflow-inline: hidden;
+        }
+
+        .d-block {
+            height: 300px;
+            width: 300px;
+            border-radius: 300px;
+        }
+
+        .broder1 {
+            height: 80px;
+            width: 250px;
+            box-shadow: 2px 2px 2px 2px;
+            background-color: plum;
+        }
+
+        .circle {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(177, 162, 162);
+            color: black;
+            padding: 12px 12px 12px 12px;
+            font-size: 30px;
+            border-radius: 70%;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .circle:hover {
+            background-color: green;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .circle1 {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(177, 162, 162);
+            color: black;
+            padding: 12px 12px 12px 12px;
+            font-size: 30px;
+            border-radius: 70%;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .circle1:hover {
+            background-color: red;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .circle2 {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(177, 162, 162);
+            color: black;
+            padding: 12px 12px 12px 12px;
+            font-size: 30px;
+            border-radius: 70%;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .circle2:hover {
+            background-color: yellow;
+            color: white;
+            transition: 0.5s;
+
+        }
+
+        .card {
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            border: 0px solid black;
+            border-left: 20px solid black;
+            padding: 10px;
+            margin: 10px;
+            border-right: 20px solid black;
+
+        }
+
+        .card:hover {
+            transition: 0.5s;
+            background: transparent;
+            color: white;
+            border: 1PX solid black;
+            transition: 0.5s;
+        }
+
+        .card2 {
+            height: 45px;
+            width: 154px;
+            outline: none;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: 900;
+            margin-top: 10px;
+        }
+
+        .card2:hover {
+            background: transparent;
+            color: black;
+            border: 1PX solid black;
+            transition: 0.5s;
+        }
+
+        .card1 {
+            height: 450px;
+            width: 300px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .card1:hover {
+            box-shadow: 4px -5px 75px -6px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 4px -5px 75px -6px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 4px -5px 75px -6px rgba(0, 0, 0, 0.75);
+            transition: 0.5s;
+            background: transparent;
+        }
+
+        .btn1 {
+            height: 45px;
+            width: 154px;
+            outline: none;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: 900;
+        }
+
+        .btn1:hover {
+            background: transparent;
+            color: black;
+            border: 1PX solid black;
+            transition: 0.5s;
+
+        }
+
+        .b1 {
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        .btn2 {
+            height: 45px;
+            width: 154px;
+            outline: none;
+            border: 1px solid black;
+            background-color: transparent;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .btn2:hover {
+            background: black;
+            color: white;
+            border: 1PX solid black;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Bharath kumar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- About Section -->
+    <section class="to" id="about">
+        <div class="displayBox" data-aos="zoom-in" data-aos-offset="200px">
+            <div class="container">
+                <div class="row text-center position-relative">
+                    <div class="col">
+                        <div class="text-light m-5">
+                            <h2> I'm <strong>Bharath kumar</strong></h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./IMG_20230421_195315_740.jpg" class="d-block w-10" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./IMG_20240410_212003_791.webp" class="d-block w-10" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./IMG_20241020_220718_852.jpg" class="d-block w-10" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-light">
+                            <h2>Aspiring Python Full Stack Developer</h2>
+                            <p>Passionate aspiring Python full-stack developer with a strong foundation in
+                                building
+                                dynamic, user-friendly web applications. Eager to craft scalable solutions by combining
+                                clean
+                                backend logic with engaging frontend experiences.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <hr class="text-light">
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div data-aos="fade-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col position-relative">
+                        <h1 class="text-center text-light">Skills</h1>
+                        <hr class="text-light">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>HTML</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>CSS</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>Bootstrap</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>JavaScript</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>Python</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>Django</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>SQL</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <h2>react.js</h2>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center text-light">what do i help?</h3>
+                    <p class="text-center lead text-light">i will help with finding a solution and solve
+                        your problems, we use process design to create digital
+                        products.Beside that also help their business</p>
+                    <p class="text-center lead text-light">We use process design to crete digital products.
+                        beside that also help their business.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="text-light">
+    </section>
+    <!-- Projects Section -->
+    <section id="Projects">
+        <div data-aos="flip-right">
+            <div class="container">
+                <div class="row text-center position-relative">
+                    <div class="col">
+                        <h1 class="text-center text-light">Projects</h1>
+                        <hr class="text-light">
+                    </div>
+                </div>
+            </div>
+            <div class="container"><br><br>
+                <div class="row text-center position-relative">
+                    <div class="col">
+                        <div class="card1" style="width: 20rem;">
+                            <img src="./E-Commerce-Platform.webp" class="card-img-top" style="height: 215px;">
+                            <div class="card-body">
+                                <h6 class="card-text text-center text-light">E-commerce</h6>
+                                <p class="text-light">The use of such platforms where you can buy and sell products
+                                    digitally is a boon to every one of us. Since this platform is of high use, hence
+                                    building the e-commerce platform is the best</p>
+                                <a href="http://127.0.0.1:5500/webpage.html"><button type="button" class="card2">view
+                                        project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card1" style="width: 20rem;">
+                            <img src="./images.jpeg" class="card-img-top" style="height: 215px;">
+                            <div class="card-body">
+                                <h6 class="card-text text-center text-light">Portfolio</h6>
+                                <p class="text-light">Personal portfolio to showcase skills and projects.</p>
+                                <div class="button" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary ">html</button>
+                                    <button type="button" class="btn btn-secondary ">css</button>
+                                    <button type="button" class="btn btn-secondary ">bootstrap</button>
+                                </div><br>
+                                <a href="http://127.0.0.1:5500/my_portfolio/index.html"><button type="button"
+                                        class="card2">view project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card1" style="width: 20rem;">
+                            <img src="./blog-post-thumb-2.jpg" class="card-img-top" style="height: 215px;">
+                            <div class="card-body">
+                                <h6 class="card-text text-center text-light">Coding typeing</h6>
+                                <p class="text-light">A fun game built with HTML, CSS, and JavaScript to improve typing
+                                    skills and manipulate the DOM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="Contact">
+        <div class="item" data-aos="fade-down">
+            <section class="contact py-5">
+                <div class="container py-5">
+                    <hr class="text-light">
+                    <h1 class="text-center text-light">
+                        Contact
+                    </h1>
+                    <hr class="text-light">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row text-center">
+                                <div class="col-lg-4">
+                                    <div class="circle">
+                                        <a href="https://maps.app.goo.gl/AfwdiKwwZJnZ82XA8?g_st=ic">
+                                            <i class="bi bi-house-check-fill" style="height: 150px;"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="text-light">Address</h5>
+                                </div>
+                                <div class="col">
+                                    <div class="circle1">
+                                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                                            <i class="bi bi-envelope-paper-heart-fill"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="text-light">Email</h5>
+                                </div>
+                                <div class="col">
+                                    <div class="circle2">
+                                        <a href="tel:8667726225">
+                                            <i class="bi bi-person-lines-fill"></i>
+                                        </a>
+                                    </div>
+                                    <h5 class="text-light">Contact</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col-lg-5 mx-auto">
+                            <input type="text" class="form-control bg-light mb-3" placeholder="Name"
+                                aria-label="First name" style="width:80%;">
+                        </div>
+                        <div class="col-lg-5 ">
+                            <input type="text" class="form-control bg-light mb-3" placeholder="Email"
+                                aria-label="Last name" style="width: 80%;">
+                        </div><br>
+                        <br>
+                        <br>
+                        <div class="form-floating py-1 ">
+                            <textarea class="form-control bg-light font-weight-bold" placeholder="Leave a comment here"
+                                id="floatingTextarea2" style="height: 200px;"></textarea>
+                            <label for="floatingTextarea2"> enter your message</label>
+                            <center>
+                                <input type="button" class="btn1 mt-2" value="SUBMIT">
+                            </center>
+                        </div>
+            </section>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+        <footer>
+            <div class="container-fluid bg-dark text-light text-center py-3">
+                <p class="mb-0">© 2025 Bharath kumar. All rights reserved.</p>
+                <p>Designed by <a href="#" class="text-light">BootstrapMade</a></p>
+            </div>
+        </footer>
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        once: true,
+    });
+    document.querySelector('.btn1').addEventListener('click', function () {
+        alert('Form submitted successfully!');
+    });
+
+
+
+</script>
+
+</html>
